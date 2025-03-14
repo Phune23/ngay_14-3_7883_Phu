@@ -26,7 +26,7 @@ router.get('/:id', async function(req, res, next) {
 router.post('/', async function(req, res, next) {
     try {
         let body = req.body;
-        let newCategory = descriptionSchema({
+        let newCategory = categorySchema({
             name:body.name,
             description: body.description
         });
